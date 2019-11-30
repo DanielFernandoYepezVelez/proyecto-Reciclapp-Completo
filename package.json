@@ -32,11 +32,8 @@
         "recharts": "^1.8.5"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "dev": "nodemon ./backend/index.js"
+        "script": "node ./src/index.js",
+        "start": "node ./backend/index.js"
     },
     "eslintConfig": {
         "extends": "react-app"
