@@ -1,0 +1,18 @@
+* {
+    background-color: #f1f4f9;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.btn {
+    background-color: #33b924 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+.btn.btn-danger {
+    background-color: red !important;
+    color: #000 !important;
+}
