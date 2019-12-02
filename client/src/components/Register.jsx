@@ -26,9 +26,9 @@ class Register extends React.Component{
     }
 
     async componentDidMount() {
-        const responseTypeDocuments = await axios.get('http://localhost:4000/api/registerUser/typeDocuments');
-        const responseNeighborhoods = await axios.get('http://localhost:4000/api/registerUser/neighborhoods');
-        const responseTypeHouses = await axios.get('http://localhost:4000/api/registerUser/houses');
+        const responseTypeDocuments = await axios.get('/api/registerUser/typeDocuments');
+        const responseNeighborhoods = await axios.get('/api/registerUser/neighborhoods');
+        const responseTypeHouses = await axios.get('/api/registerUser/houses');
 
         this.setState({
             typeDocuments: responseTypeDocuments.data.documents,

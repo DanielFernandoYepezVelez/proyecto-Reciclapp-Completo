@@ -14,7 +14,7 @@ export class index extends PureComponent {
     }
 
     async componentDidMount() {
-        const responseAllUsersAppointments = await axios('http://localhost:4000/api/getAppointments/appointments');
+        const responseAllUsersAppointments = await axios('/api/getAppointments/appointments');
 
         this.setState({
             AllUsersAppointments: responseAllUsersAppointments.data.appointments

@@ -19,7 +19,7 @@ class Login extends React.Component{
             password: ''
         });
 
-        axios.post('http://localhost:4000/api/loginVerify/loginUser', {
+        axios.post('/api/loginVerify/loginUser', {
             email: this.state.email,
             password: this.state.password
         }).then(res => localStorage.setItem('token', res.data.token));

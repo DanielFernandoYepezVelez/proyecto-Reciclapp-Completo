@@ -28,7 +28,7 @@ class Schedule extends React.Component {
       return this.props.history.push('/login');
     }
 
-    axios.get('http://localhost:4000/api/schedule/locations', {
+    axios.get('/api/schedule/locations', {
         headers: {
             token: `${token}`
         }
@@ -62,7 +62,7 @@ class Schedule extends React.Component {
 
       // return console.log(this.state.location);
 
-      axios.post('http://localhost:4000/api/schedule/date', {
+      axios.post('/api/schedule/date', {
         date: this.state.startDate,
         location_id: this.state.location
        },
@@ -85,7 +85,7 @@ class Schedule extends React.Component {
 
       // return console.log(this.state.location)
 
-      axios.post('http://localhost:4000/api/schedule/location', {
+      axios.post('/api/schedule/location', {
         location_id: this.state.location
        },
        {

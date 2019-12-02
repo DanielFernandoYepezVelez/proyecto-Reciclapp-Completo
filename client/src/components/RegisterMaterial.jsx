@@ -26,7 +26,7 @@ class RegisterMaterial extends React.Component{
           return this.props.history.push('/login');
         }
     
-        axios.get('http://localhost:4000/api/material/typeMaterials', {
+        axios.get('/api/material/typeMaterials', {
             headers: {
                 token: `${token}`
             }
@@ -94,7 +94,7 @@ class RegisterMaterial extends React.Component{
         document.querySelector("#codigo").innerHTML = '';
 
         const token = getJwt();
-        axios.post('http://localhost:4000/api/material/createMaterial', {
+        axios.post('/api/material/createMaterial', {
             codigoScanner: this.state.codigoScanner,
             quantity: this.state.quantityofproducts,
             typeMaterial_id: this.state.typeMaterial
@@ -115,7 +115,7 @@ class RegisterMaterial extends React.Component{
         document.querySelector("#codigo").innerHTML = '';
 
         const token = getJwt();
-        axios.post('http://localhost:4000/api/material/createMaterial', {
+        axios.post('/api/material/createMaterial', {
             codigoScanner: this.state.codigoScanner,
             quantity: this.state.quantityofproducts,
             typeMaterial_id: this.state.typeMaterial

@@ -19,7 +19,7 @@ class List extends React.Component{
             return this.props.history.push('/login');
         }
 
-        axios.get('http://localhost:4000/api/product/listProducts', {
+        axios.get('/api/product/listProducts', {
             headers: {
                 token: `${token}`
             }

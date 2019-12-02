@@ -13,7 +13,7 @@ export class index extends PureComponent {
     }
 
     async componentDidMount(){
-        const responseAllUsersRegistered = await axios.get('http://localhost:4000/api/getUser/users');
+        const responseAllUsersRegistered = await axios.get('/api/getUser/users');
         
         this.setState({
             AllUsersRegistered: responseAllUsersRegistered.data.users
