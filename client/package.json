@@ -3,6 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/react-fontawesome": "^0.1.7",
+        "@o2xp/react-datatable": "^1.1.28",
+        "@trendmicro/react-sidenav": "^0.4.5",
+        "qrcode.react": "^1.0.0",
         "react": "^16.11.0",
         "react-data-components": "^1.2.0",
         "react-datepicker": "^2.10.0",
