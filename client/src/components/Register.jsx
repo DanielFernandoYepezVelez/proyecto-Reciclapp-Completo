@@ -73,7 +73,7 @@ class Register extends React.Component{
             addressHome: '',
             membersHome: ''
         });
-        await axios.post('http://localhost:4000/api/registerUser/createUser', tableUsers);        
+        await axios.post('/api/registerUser/createUser', tableUsers);        
     }
 
     onClick = (eventObject) => {
