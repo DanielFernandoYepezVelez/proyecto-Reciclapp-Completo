@@ -24,6 +24,10 @@ app.use('/api/information', require('./routes/api/user/information'));
 app.use('/api/getUser', require('./routes/api/admin/getUsers'));
 app.use('/api/getAppointments', require('./routes/api/admin/getAppointments'));
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
 app.listen(app.get('port'), () => {
     console.log(`Server On Port ${app.get('port')}`);
 });
