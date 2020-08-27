@@ -30,7 +30,7 @@
         "concurrently": "^5.0.0",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "js": "^0.1.0",
         "jsonwebtoken": "^8.5.1",
         "jspdf": "^1.5.3",
